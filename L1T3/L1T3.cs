@@ -6,7 +6,11 @@ namespace L1T3
     {
         public static int Main()
         {
+            double alpha = 0;
 
+            Console.WriteLine("Введиите альфа: ");
+
+            alpha = Convert.ToDouble(Console.ReadLine());
 
             return 0;
         }
