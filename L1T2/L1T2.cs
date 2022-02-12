@@ -4,6 +4,12 @@ namespace L1T2
 {
     public class Info
     {
+        public static void PrintCurrentDate()
+        {
+            DateTime thisDay = DateTime.Now;
+            Console.WriteLine("Текущее время: " + thisDay.ToString());
+        }
+
         public static void PrintOsVersion()
         {
             var os = Environment.OSVersion;
@@ -19,7 +25,7 @@ namespace L1T2
         public static int Main()
         {
             PrintOsVersion();
-
+            PrintCurrentDate();
             return 0;
         }
     }
