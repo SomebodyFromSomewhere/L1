@@ -14,8 +14,15 @@ namespace L1T3
             double alpha = 0;
 
             Console.WriteLine("Введиите альфа: ");
-
-            alpha = Convert.ToDouble(Console.ReadLine());
+            try
+            {
+                alpha = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            
 
             double z1 = (Math.Cos(alpha) + Math.Sin(alpha)) / (Math.Cos(alpha) - Math.Sin(alpha));
 
