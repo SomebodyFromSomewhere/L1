@@ -4,7 +4,7 @@ namespace L1T2
 {
     public class Info
     {
-        public static int Main()
+        public static void PrintOsVersion()
         {
             var os = Environment.OSVersion;
             Console.WriteLine("Информация о текущей ОС:\n");
@@ -14,6 +14,11 @@ namespace L1T2
             Console.WriteLine("   Основная: {0}", os.Version.Major);
             Console.WriteLine("   Второстепенная: {0}", os.Version.Minor);
             Console.WriteLine("Пакет обновления: '{0}'", os.ServicePack);
+        }
+
+        public static int Main()
+        {
+            PrintOsVersion();
 
             return 0;
         }
